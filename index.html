@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img class="img-header" src="./images/bg-pattern.svg" alt="">
+  <div class="center-content">
+    <div class="header-content">
+      <img class="circle" src="./images/pattern-circles.svg" alt="">
+      <h1>Simple, traffic-based pricing</h1>
+      <p class="p1">Sign-up for our 30-day trial. No credit card required.</p>  
+    </div>
+
+    <div class="container">
+      <div class="header-card">
+        <div class="header-price">
+          <p class="pageviews"><span id="pageviews">100K</span> Pageviews</p>
+            <p>
+              <span class="price" id="price">16.00</span>
+              <span id="choicePaiement"></span></p>
+            <div class="swipe-container">
+              <div class="progression"></div>
+              <input type="range" min="0" max="5" step="0.1" class="swipe" id="swipe">
+            </div>
+        </div>
+        <div class="content-header">
+          <p class="monthly">Monthly Billing
+            <div class="toggle-container">
+              <input class="toggle" type="checkbox" id="toggle">
+              <div class="slider"></div>
+            </div>
+            Yearly Billing 
+            <p class="discount">25% <span class="discountNone">discount</span></p> 
+          </p>
+        </div>
+      </div> 
+        <hr>
+
+      <div class="footer-card">  
+          <ul>
+          <li><img class="icon-check" src="./images/icon-check.svg" alt=""> Unlimited websites</li> 
+          <li><img class="icon-check" src="./images/icon-check.svg" alt="">100% data ownership</li> 
+          <li><img class="icon-check" src="./images/icon-check.svg" alt="">Email reports</li> 
+          </ul>
+          <button class="cta" id="cta">Start my trial</button> 
+      </div>  
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+</body>
+</html>
